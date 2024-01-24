@@ -1,0 +1,5 @@
+  commit(message) {
+    const commitId = ${this.currentBranch}_commit_${this.branches[this.currentBranch].length + 1};
+    this.branches[this.currentBranch].push(commitId);
+    console.log(`Committed: ${commitId} - ${message}`);
+  }
